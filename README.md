@@ -5,3 +5,4 @@ Everything what i will do here is got from https://dotnet.microsoft.com/learn/cs
 * **Numbers:** First working with types in C#, and constants. Checking how does program work when value of the variable is bigger than can be.
 * **Conditions and loops:** Nothing to add, like in every other programming langues.
 * **Lists:** Something like vector, first steps with lists in C#.
+* **Classes:** First steps with classes, namespace in C#. Simple bank acc application. Here i can make withdrawal, deposits and develop this app. Good idea for future project!
