@@ -2,6 +2,49 @@
 
 namespace TutorialCSharp
 {
+    public class MethodClass
+    {
+        public void Method1(string message) { }
+        public void Method2(string message) { }
+        
+    }
+
+    class Program
+    {
+        public delegate void Del(string message);
+        public static void DelegateMethod(string message)
+        {
+            Console.WriteLine(message);
+        }
+        void DoWork(int k) { };
+        public static void MethodWithCallback(int param1, int param2, Del callback)
+        {
+            callback($"The number is {param1 + param2}");
+        }
+        static void Main(string[] args)
+        {
+            Del handler = DelegateMethod;
+            handler("Hello World");
+            MethodWithCallback(1, 2, handler);
+            Console.WriteLine("\n\n");
+
+            var obj = new MethodClass();
+            Del d1 = obj.Method1;
+            Del d2 = obj.Method2;
+            Del d3 = DelegateMethod;
+
+            Del allMethodsDelegate = d1 + d2;
+            allMethodsDelegate += d3;
+            Console.WriteLine(allMethodsDelegate);
+
+            Console.WriteLine("\n\n");
+        }
+    }
+}
+
+/*
+namespace TutorialCSharp
+{
     interface IEnglishDimensions
     {
         float Length();
@@ -52,7 +95,6 @@ namespace TutorialCSharp
 
 }
 
-/*
 namespace TutorialCSharp
 {
     interface IDimensions
