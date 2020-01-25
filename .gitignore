@@ -22,3 +22,8 @@ Lists/Lists/obj/*
 OOP/.vs/*
 OOP/OOP/bin/*
 OOP/OOP/obj/*
+
+#AutoProperties
+AutoProperties/.vs/*
+AutoProperties/AutoProperties/bin/*
+AutoProperties/AutoProperties/obj/*
