@@ -32,3 +32,8 @@ AutoProperties/AutoProperties/obj/*
 Interpolations/.vs/*
 Interpolations/Interpolations/bin/*
 Interpolations/Interpolations/obj/*
+
+#TutorialCSharp
+TutorialCSharp/.vs/*
+TutorialCSharp/TutorialCSharp/bin/*
+TutorialCSharp/TutorialCSharp/obj/*
