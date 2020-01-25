@@ -27,3 +27,8 @@ OOP/OOP/obj/*
 AutoProperties/.vs/*
 AutoProperties/AutoProperties/bin/*
 AutoProperties/AutoProperties/obj/*
+
+#Interpolations
+Interpolations/.vs/*
+Interpolations/Interpolations/bin/*
+Interpolations/Interpolations/obj/*
