@@ -2,14 +2,32 @@
 
 namespace TutorialCSharp
 {
-    public class MethodClass
-    {
-        public void Method1(string message) { }
-        public void Method2(string message) { }
-        
-    }
+    delegate void Del(int i, double j);
 
     class Program
+    {
+        static void Main(string[] args)
+        {
+            Program m = new Program();
+
+            Del d = m.MultiplyNumbers;
+
+            Console.WriteLine("Invoking the delegate using 'MultiplyNumbers':");
+            for(int i = 1; i <= 5; i++)
+            {
+                d(i, 2);
+            }
+
+            Console.WriteLine("Press any key to exit");
+            Console.ReadKey();
+        }
+        void MultiplyNumbers(int m, double n)
+        {
+            Console.Write(m * n + " ");
+        }
+    }
+
+   /* class Program
     {
         public delegate void Del(string message);
         public static void DelegateMethod(string message)
@@ -39,7 +57,7 @@ namespace TutorialCSharp
 
             Console.WriteLine("\n\n");
         }
-    }
+    }*/
 }
 
 /*

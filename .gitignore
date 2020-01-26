@@ -37,3 +37,10 @@ Interpolations/Interpolations/obj/*
 TutorialCSharp/.vs/*
 TutorialCSharp/TutorialCSharp/bin/*
 TutorialCSharp/TutorialCSharp/obj/*
+
+#BasicDeclarationsAndExpresions
+BasicDeclarationsAndExpresions/.vs/*
+BasicDeclarationsAndExpresions/obj/*
+BasicDeclarationsAndExpresions/bin/*
+
+FirstWPFapp/*
