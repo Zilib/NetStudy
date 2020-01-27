@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 
 // https://www.w3resource.com/csharp-exercises/basic/index.php
 
@@ -272,6 +273,115 @@ namespace BasicDeclerationsAndExpresions
             Console.WriteLine(sum);
         }
 
+        static void Ex27()
+        {
+            int x = InputNumber("Input a number(integer): ");
+            char[] Digits = x.ToString().ToCharArray();
+
+            int DigitsSum = 0;
+            for(int i = 0; i < Digits.Length; i++)
+            {
+                DigitsSum += (int)Char.GetNumericValue(Digits[i]);
+            }
+            Console.WriteLine(DigitsSum);
+        }
+
+        static void Ex28()
+        {
+            string String = "Display the pattern like pyramid using the alphabet.";
+            string[] SplitedString = String.Split(" ");
+            Array.Reverse(SplitedString);
+            string ReversedString = string.Join(" ", SplitedString);
+            Console.WriteLine(ReversedString);
+        }
+
+        static void Ex29()
+        {
+            string path = @"E:\.NetLearning\BasicDeclarationsAndExpresions\Files\file.txt";
+            if (File.Exists(path))
+            {
+                FileInfo f = new FileInfo(path);
+                Console.WriteLine($"Size of a file: {f.Length}");
+            }
+        }
+
+        static void Ex30()
+        {
+            string hexval = "4B0";
+            Console.WriteLine($"Hexadecimal number: {hexval}");
+            int decValue = int.Parse(hexval, System.Globalization.NumberStyles.HexNumber);
+            Console.WriteLine($"Decimal number: {decValue}");
+        }
+
+        static void Ex31()
+        {
+            int[] Array1 = new int[4] { 1, 3, -5, 4 };
+            int[] Array2 = new int[4] { 1, 4, -5, -2 };
+
+            for (int i = 0; i < 4; i++)
+                Console.Write($"{Array1[i] * Array2[i]} ");
+
+        }
+
+        static void Ex32()
+        {
+            Console.Write("Input a string: ");
+            string InputString = Console.ReadLine();
+            if (InputString.Length < 4)
+            {
+                Console.WriteLine("{0}{0}{0}{0}", InputString);
+            }
+            else if (InputString.Length >= 4)
+            {
+                string[] SplitedString = InputString.Split(" ");
+                Console.WriteLine("{0}{0}{0}{0}", SplitedString[SplitedString.Length - 1]);
+            }
+
+        }
+
+        static void Ex33()
+        {
+            int x = InputNumber("Input first integer: ");
+            Console.WriteLine($"{(x % 3 == 0 || x % 7 == 0)}");
+        }
+
+        static void Ex34()
+        {
+            string text = "Hello how are you?";
+            Console.WriteLine($"{(text.StartsWith("Hello") && text[5] == ' ')}");
+        }
+
+        static void Ex35()
+        {
+            int a = InputNumber("Input a first number(<100): ");
+            int b = InputNumber("Input a second number(>100): ");
+
+            Console.WriteLine(a < 100 && b > 100);
+        }
+
+        static void Ex36()
+        {
+            int a = InputNumber("Input a first number: ");
+            int b = InputNumber("Input a second number: ");
+
+            Console.WriteLine(a >= -10 && a <= 10 && b >= -10 && b <= 10);
+        }
+
+        static void Ex37()
+        {
+            Console.Write("Test Data: ");
+            string Data = Console.ReadLine();
+
+            if (Data.Substring(1, 2) == "HP")
+            {
+                Console.WriteLine(Data.Remove(1, 2));
+            }
+            else
+            {
+                Console.WriteLine(Data);
+            }
+        }
+
         static void Main(string[] args)
         {
             //Ex1();
@@ -300,7 +410,18 @@ namespace BasicDeclerationsAndExpresions
             //Console.WriteLine(Ex23("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG."));
             //Ex24();
             //Ex25();
-            Ex26();
+            //Ex26();
+            //Ex27();
+            //Ex28();
+            //Ex29();
+            //Ex30();
+            //Ex31();
+            //Ex32();
+            //Ex33();
+            //Ex34();
+            //Ex35();
+            //Ex36();
+            Ex37();
         }
     }
 }
