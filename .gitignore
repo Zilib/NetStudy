@@ -44,3 +44,9 @@ BasicDeclarationsAndExpresions/obj/*
 BasicDeclarationsAndExpresions/bin/*
 
 FirstWPFapp/*
+MyOwnNotepad/*
+
+#Calculator
+Calculator/.vs/*
+Calculator/bin/*
+Calculator/obj/*

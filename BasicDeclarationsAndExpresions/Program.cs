@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 using System.IO;
 
 // https://www.w3resource.com/csharp-exercises/basic/index.php
@@ -382,6 +383,54 @@ namespace BasicDeclerationsAndExpresions
             }
         }
 
+        static void Ex38()
+        {
+            string A = Console.ReadLine();
+
+            if(A.Length >= 1)
+            {
+                if (A[0] == 'P')
+                    Console.Write("P");
+                if (A[1] == 'H')
+                    Console.Write("H");
+            }
+        }
+
+        static void Ex39()
+        {
+            int[] a = new int[3];
+
+            a[0] = InputNumber("Input first integer: ");
+            a[1] = InputNumber("Input second integer: ");
+            a[2] = InputNumber("Input third integer: ");
+
+            Array.Sort(a);
+            Array.Reverse(a);
+
+            Console.WriteLine($"Largest of three: {a[0]}");
+            Console.WriteLine($"Lowest of three: {a[2]}");
+        }
+
+        static void Ex40()
+        {
+            int a = InputNumber("Input first integer: ");
+            int b = InputNumber("Input second integer: ");
+
+            if (a == b)
+                Console.WriteLine("0");
+            else
+                Console.WriteLine(Math.Abs(a - 20) < Math.Abs(b - 20) ? a : b);
+        }
+
+        static void Ex41()
+        {
+            Console.WriteLine("Input string: ");
+            string a = Console.ReadLine();
+            var count = a.Count(s => s == 'w');
+
+            Console.WriteLine(count >= 1 && count <= 3);
+        }
+
         static void Main(string[] args)
         {
             //Ex1();
@@ -421,7 +470,11 @@ namespace BasicDeclerationsAndExpresions
             //Ex34();
             //Ex35();
             //Ex36();
-            Ex37();
+            //Ex37();
+            //Ex38();
+            //Ex39();
+            //Ex40();
+            Ex41();
         }
     }
 }
