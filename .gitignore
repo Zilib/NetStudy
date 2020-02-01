@@ -59,3 +59,8 @@ ProjektAdrian/Inspiracje.txt
 WpfBasics/.vs/*
 WpfBasics/obj/*
 WpfBasics/bin/*
+
+#WpfTreeView
+WpfTreeView/.vs/*
+WpfTreeView/obj/*
+WpfTreeView/bin/*

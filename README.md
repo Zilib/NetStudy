@@ -11,3 +11,4 @@ Everything what i will do here is got from https://dotnet.microsoft.com/learn/cs
 # WPF applications
 Oke there will be my first steps with WPF, projects with WPF
 * **WPFBasics:** Simple modeling view, and first steps with designing UI and working with WPF tags.
+* **WpfTreeView:** More advanced application which is using System.IO, it is my own file manager, which is showing files, folders and drivers. 
