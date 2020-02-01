@@ -12,7 +12,12 @@
         </Style>
     </Window.Resources>
   <DockPanel Margin="10">
-        <TextBox DockPanel.Dock="Top" FontSize="30" IsReadOnly="True"/>
+        <TextBox DockPanel.Dock="Top" 
+                 FontSize="30" 
+                 Name="textBox"                 
+                 IsReadOnly="True"
+                 Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}"
+        />
         <Grid Margin="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -27,7 +32,7 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <Button>(</Button>
+            <Button Click="AddToString" Tag="(">(</Button>
             <Button Grid.Column="1">)</Button>
             <Button Grid.Column="2">%</Button>
             <Button Grid.Column="3">AC</Button>

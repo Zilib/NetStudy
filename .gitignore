@@ -50,3 +50,12 @@ MyOwnNotepad/*
 Calculator/.vs/*
 Calculator/bin/*
 Calculator/obj/*
+
+#Website
+ProjektAdrian/.vs/*
+ProjektAdrian/Inspiracje.txt
+
+#WPFBasics
+WpfBasics/.vs/*
+WpfBasics/obj/*
+WpfBasics/bin/*
